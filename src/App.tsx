@@ -16,7 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/loginex">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
