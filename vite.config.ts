@@ -5,7 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/loginex/",   // 👈 THÊM DÒNG NÀY (TÊN REPO)
+  base: "/loginex/",
+  build: {
+    sourcemap: true, // 👈 thêm cái này để console báo đúng file .tsx khi crash
+  },
   server: {
     host: "::",
     port: 8080,
