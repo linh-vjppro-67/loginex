@@ -7,7 +7,8 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "/loginex/",
   build: {
-    sourcemap: true, // 👈 thêm cái này để console báo đúng file .tsx khi crash
+    sourcemap: true,
+    minify: false,
   },
   server: {
     host: "::",
